@@ -21,7 +21,7 @@ ProductTag.init(
       },
     },
   },
-
+//below is our foreign key reference:
     tag_id: {
       type: DataTypes.INTEGER,
       References: {

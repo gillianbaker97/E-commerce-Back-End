@@ -10,14 +10,14 @@ class Product extends Model {}
 Product.init(
   {
     id: {
-      type: DataTypes.Integer,
+      type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true,
       autoIncrement: true,
     },
 
     product_name: {
-      type: DataTypes.String,
+      type: DataTypes.STRING,
       allowNull: false,
     },
 
@@ -30,16 +30,16 @@ Product.init(
     },
     
     stock: {
-      type: DataTypes.Integer,
+      type: DataTypes.INTEGER,
       allowNull: false,
       defaultValue: 10,
       validate: {
         isNumeric: true,
       },
     },
-
+//instance of our foreign key below:
     category_id: {
-      type: DataTypes.Integer,
+      type: DataTypes.INTEGER,
       References: {
         model: 'Category',
         id: 'id',

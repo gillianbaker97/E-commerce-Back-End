@@ -1,12 +1,12 @@
 // import models
-const Product = require('./Product');
+const Product = require('./Product');   /* requiring the correct file paths */
 const Category = require('./Category');
 const Tag = require('./Tag');
 const ProductTag = require('./ProductTag');
 
 // Products belongsTo Category
 
-Product.BelongsTo(Category, {
+Product.BelongsTo(Category, {   /* inputting foreign keys */
   foreignKey: 'category_id',
 });
 // Categories have many Products
@@ -22,7 +22,7 @@ Tag.BelongsToMany(Product, {
   foreignKey: 'tag_id',
 });
 
-module.exports = {
+module.exports = {    /* exporting the different models */
   Product,
   Category,
   Tag,

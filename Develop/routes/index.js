@@ -8,3 +8,5 @@ router.use((req, res) => {
 });
 
 module.exports = router;
+
+/* requiring express and setting an alert if we have the wrong route */

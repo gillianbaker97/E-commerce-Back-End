@@ -8,3 +8,6 @@ router.use('/products', productRoutes);
 router.use('/tags', tagRoutes);
 
 module.exports = router;
+
+
+/* requiring the router to use the routes */

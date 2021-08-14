@@ -1,10 +1,10 @@
-const { Model, DataTypes } = require('sequelize');
+const { Model, DataTypes } = require('sequelize');  /* package configuration */
 
 const sequelize = require('../config/connection.js');
 
-class Category extends Model {}
+class Category extends Model {}  /* making the class Category able to extend the Model */
 
-Category.init(
+Category.init(   /* specifying parts of the Category */
   {
     category_id: {
       type: DataTypes.Integer,
